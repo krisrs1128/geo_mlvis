@@ -44,7 +44,7 @@ def bce_loss(y_hat, y, device, weights):
 
 
 def train_epoch(model, loader, optimizer, device, epoch=0, save_dir=None):
-    loss_ = 0
+    loss_ = 0;Loss=[]
     model.train()
     n = len(loader.dataset)#length of dataset, all 
     for i, (x, y) in enumerate(loader):# len(loader)=len(loader.dataset)/batch_size
@@ -55,7 +55,7 @@ def train_epoch(model, loader, optimizer, device, epoch=0, save_dir=None):
         optimizer.zero_grad()
         y_hat = model(x)
 
-        if i % 500 == 0 and save_dir is not None:
+        if i % 40 == 0 and save_dir is not None:
             np.save(save_dir / f"x-{epoch}-{i}-.npy", x.detach().cpu().numpy())
             np.save(save_dir / f"y-{epoch}-{i}-.npy", y.detach().cpu().numpy())
             np.save(save_dir / f"y_hat-{epoch}-{i}-.npy", y_hat.detach().cpu().numpy())
@@ -66,9 +66,10 @@ def train_epoch(model, loader, optimizer, device, epoch=0, save_dir=None):
 
         # compute losses
         loss_ += l.item()
+        Loss.append(l.item())
         log_batch(epoch, i, n, loss_, loader.batch_size)
 
-    return loss_ / n
+    return loss_ / n,Loss
 
 
 def validate(model, loader):
