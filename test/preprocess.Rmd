@@ -9,6 +9,7 @@ params:
   n_patches: 20
   B: 1 
 ---
+#add a parameter to indicate the test_preprocess and train_preprocess
 
 ```{r setup, include=FALSE}
 rm(list=setdiff(ls(), "params"))
