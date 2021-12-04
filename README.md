@@ -16,8 +16,11 @@ Data is modeled with a U-net model in "Train_Pred/train_gpu.py" and predicted wi
 
 
 
-![25811638647397_ pic_hd](https://user-images.githubusercontent.com/53232883/144722760-d1a153f8-609c-46f5-b1a5-6dd5b095d43a.jpg)
-*Screenshot of shiny app*
+
+
+| ![25811638647397_ pic_hd](https://user-images.githubusercontent.com/53232883/144722760-d1a153f8-609c-46f5-b1a5-6dd5b095d43a.jpg) | 
+|:--:| 
+| *Screenshot of shiny app* |
 
 
 
