@@ -3,14 +3,7 @@
 
 
 ## Motivation
-In glacier segmentation, researchers focus on implementing model to automatically identify the glaciers from remote sensing data. However, the interpretation of the process is not enough. In this project, we aim to provide a comprehensive visual interpretation of glacier segmentation via interactive visualization and representation analysis. We develop a [shiny app](https://bruce-zheng.shinyapps.io/glacier_segmententation/) for error analysis where users could easily detect potential issues of the predictions. Here we display two examples, one for the screenshot of the shinyapp and another one for the visual representation of one satellite image.
-
-
-![25811638647397_ pic_hd](https://user-images.githubusercontent.com/53232883/144722760-d1a153f8-609c-46f5-b1a5-6dd5b095d43a.jpg)
-
-![acts-1-1](https://user-images.githubusercontent.com/53232883/144722811-04a40069-fc36-4ae5-81a3-ef39ca130784.png)
-
-
+In glacier segmentation, researchers focus on implementing model to automatically identify the glaciers from remote sensing data. However, the interpretation of the process is not enough. In this project, we aim to provide a comprehensive visual interpretation of glacier segmentation via interactive visualization and representation analysis. We develop a [shiny app](https://bruce-zheng.shinyapps.io/glacier_segmententation/) for error analysis where users could easily detect potential issues of the predictions. Here we display two examples below, one for the screenshot of the shinyapp and another one for the visual representation of one satellite image.
 
 
 ## Code Guidance
@@ -20,4 +13,13 @@ Raw data coule be downloaded as .tiff files using "Data_Preview_Download/downloa
 Data is processed using "Preprocess/preprocess.Rmd" where we also include bash code for cluster computing.
 
 Data is modeled with a U-net model in "Train_Pred/train_gpu.py" and predicted with "Train_Pred/save_preds.py".
+
+
+
+![25811638647397_ pic_hd](https://user-images.githubusercontent.com/53232883/144722760-d1a153f8-609c-46f5-b1a5-6dd5b095d43a.jpg)
+
+![acts-1-1](https://user-images.githubusercontent.com/53232883/144722811-04a40069-fc36-4ae5-81a3-ef39ca130784.png)
+
+
+
 
