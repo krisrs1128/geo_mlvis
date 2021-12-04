@@ -5,7 +5,8 @@
 ## Motivation
 In glacier segmentation, researchers focus on implementing model to automatically identify the glaciers from remote sensing data. However, the interpretation of the process is not enough. In this project, we aim to provide a comprehensive visual interpretation of glacier segmentation via interactive visualization and representation analysis. We develop a [shiny app](https://bruce-zheng.shinyapps.io/glacier_segmententation/) for error analysis where users could easily detect potential issues of the predictions.
 
-[annotation_app.pdf](https://github.com/krisrs1128/geo_mlvis/files/7654576/annotation_app.pdf)
+![annotation_app](https://user-images.githubusercontent.com/53232883/144722685-e73ee8de-69f7-461e-a76e-d8b1724767f1.jpg)
+
 
 
 ## Code Guidance
