@@ -25,8 +25,7 @@ Data is modeled with a U-net model in "Train_Pred/train_gpu.py" and predicted wi
 
 | ![acts-1-1](https://user-images.githubusercontent.com/53232883/144722811-04a40069-fc36-4ae5-81a3-ef39ca130784.png) | 
 |:--:| 
-| *Activations of one satellite image across five convolutional layers of the U-Net model. Rows represent the first, third, fifth and seventh downsampling convolutional layers, the first and third upsampling convolutional layers, the last pooling layer and the second middle convolutional layer. For each layer, we randomly plot eight activations in grayscale. We observe that the activations capture basic features at the first layer, become more blurred as down sampling goes deeper, and becomes clearer at the middle layer. Comparing activations in the same layer, we find that the activations look alike in the first layer, but different in the middle layer.* |
-| *Figure 2: Visual representations of one satellite image* |
+| *Figure 2: Visual representations of one satellite image (Activations of one satellite image across five convolutional layers of the U-Net model. Rows represent the first, third, fifth and seventh downsampling convolutional layers, the first and third upsampling convolutional layers, the last pooling layer and the second middle convolutional layer. For each layer, we randomly plot eight activations in grayscale. We observe that the activations capture basic features at the first layer, become more blurred as down sampling goes deeper, and becomes clearer at the middle layer. Comparing activations in the same layer, we find that the activations look alike in the first layer, but different in the middle layer.) * |
 
 
 
