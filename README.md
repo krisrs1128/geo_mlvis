@@ -1,5 +1,6 @@
 # geo_mlvis
-This is the code repository for "Glacier Segmentation" project.
+This is the code repository for "Interactive visualization and representation analysis applied to Glacier Segmentation" project. 
+We provide a comprehensive visual interpretation of glacier segmentation via interactive visualization and representation analysis.
 
 Raw data coule be downloaded as .tiff files using "Data_Preview_Download/download.ipynb"
 
