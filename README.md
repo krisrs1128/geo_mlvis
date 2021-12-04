@@ -5,7 +5,7 @@
 ## Motivation
 In glacier segmentation, researchers focus on implementing model to automatically identify the glaciers from remote sensing data. However, the interpretation of the process is not enough. In this project, we aim to provide a comprehensive visual interpretation of glacier segmentation via interactive visualization and representation analysis.
 
-## For the 
+## Code Guidance
 
 Raw data coule be downloaded as .tiff files using "Data_Preview_Download/download.ipynb"
 
