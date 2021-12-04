@@ -1,5 +1,5 @@
 # geo_mlvis
-*This is the code repository for "Interactive visualization and representation analysis applied to Glacier Segmentation" project.*
+**This is the code repository for "Interactive visualization and representation analysis applied to Glacier Segmentation" project.**
 
 
 ## Motivation
