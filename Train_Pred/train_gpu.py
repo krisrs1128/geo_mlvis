@@ -41,6 +41,7 @@ val_loader = DataLoader(val_ds, batch_size=args["batch_size"], shuffle=False)
 import torch.optim
 from unet import Unet
 from train import train_epoch
+from train import validate
 
 model = Unet(9, 3, 4, dropout=0.2).to(args["device"])
 optimizer = torch.optim.Adam(model.parameters(), lr=args["lr"])
