@@ -89,6 +89,8 @@ def validate(model, loader, device):
     model.eval()
     batch_size = False
     for i, (x, y) in enumerate(loader):
+        x = x.to(device)
+        y = y.to(device)
         with torch.no_grad():
             y_hat = model(x)
             loss_value += loss(y_hat, y, model.parameters(), device)
