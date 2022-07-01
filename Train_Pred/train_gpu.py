@@ -49,6 +49,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=args["lr"])
 Loss=[];
 val_loss=[]
 for epoch in range(args["epochs"]):
+    #enuermate i , i%5==0, save the checkpoint model.
     l=train_epoch(model, train_loader, optimizer, args["device"], epoch, args["save_dir"])
     Loss.append([l[0],l[1]])
     val_loss.append(validate(model,val_loader,args["device"]))
