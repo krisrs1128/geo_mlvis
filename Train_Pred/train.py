@@ -72,16 +72,28 @@ def train_epoch(model, loader, optimizer, device, epoch=0, save_dir=None):
     return loss_ / n,Loss
 
 
-def validate(model, loader):
-    loss = 0
+#def validate(model, loader):
+    #loss = 0
+    #model.eval()
+    #batch_size = False
+    #for i, (x, y) in enumerate(loader):
+        #with torch.no_grad():
+            #y_hat = model(x)
+            #loss += loss(y_hat, y)
+
+    #return loss / len(loader.dataset)
+
+
+def validate(model, loader, device):
+    loss_value = 0
     model.eval()
     batch_size = False
     for i, (x, y) in enumerate(loader):
         with torch.no_grad():
             y_hat = model(x)
-            loss += loss(y_hat, y)
+            loss_value += loss(y_hat, y, model.parameters(), device)
 
-    return loss / len(loader.dataset)
+    return loss_value / len(loader.dataset)
 
 
 def log_batch(epoch, i, n, loss, batch_size):
