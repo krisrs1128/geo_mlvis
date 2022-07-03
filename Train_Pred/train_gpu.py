@@ -53,8 +53,8 @@ for epoch in range(args["epochs"]):
     l=train_epoch(model, train_loader, optimizer, args["device"], epoch, args["save_dir"])
     Loss.append([l[0],l[1]])
     val_loss.append(validate(model,val_loader,args["device"]))
-    if epoch%5==0:
-        torch.save(model.state_dict(), f"model_{epoch}.pt")
+    #if epoch%5==0:
+    torch.save(model.state_dict(), f"model_{epoch}.pt")
         
 
 torch.save(model.state_dict(), "model.pt")
