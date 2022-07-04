@@ -6,7 +6,7 @@ import pickle
 import shutil
 
 args = {
-    "batch_size": 5, # make this bigger if you are not running on binder
+    "batch_size": 2, # make this bigger if you are not running on binder
     "epochs": 50,
     "lr": 0.0001,
     "device": "cuda", # set to "cuda" if GPU is available
