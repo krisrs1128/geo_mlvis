@@ -3,7 +3,8 @@ from pathlib import Path
 
 args = {
     "device": "cuda", # set to "cuda" if gpu is available
-    "out_dir": Path("predictions")
+    "out_dir": Path("predictions"),
+    "test_dir": Path("test_npy")
 }
 
 import torch
@@ -22,7 +23,7 @@ paths = {}
 for split in ["train"]:
     paths[split] = {}
     for v in ["x", "y"]:
-        paths[split][v] = list(Path("out_process").glob(v + "*"))
+        paths[split][v] = list(args["test_dir"].glob(v + "*"))
         paths[split][v].sort()
         
 ds = {
@@ -31,6 +32,6 @@ ds = {
 }
 
 from train import predictions
-
-predictions(model, ds["train"], args["out_dir"] / "train", args["device"])
+predictions(model, ds["train"], args["out_dir"], args["device"])
+#predictions(model, ds["train"], args["out_dir"] / "train", args["device"])
 #predictions(model, ds["test"], args["out_dir"] / "test", args["device"])
