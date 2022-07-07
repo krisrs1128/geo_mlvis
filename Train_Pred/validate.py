@@ -36,8 +36,9 @@ from unet import Unet
 from train import train_epoch
 from train import validate
 
+paths_model = sorted(list(args["model_dir"].glob("model_*pt")))
 val_loss=[]
-for i in sorted(list(args["model_dir"].glob("*pt"))):
+for i in paths_model:
   model = Unet(9, 3, 4, dropout=0.2).to(args["device"])
   model.load_state_dict(torch.load(i))
   val_loss.append(validate(model,val_loader,args["device"]))
