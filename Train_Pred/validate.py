@@ -37,6 +37,9 @@ from train import train_epoch
 from train import validate
 
 paths_model = sorted(list(args["model_dir"].glob("model_*pt")))
+paths_model_new = [str(x) for x in paths_model]
+paths_model=sorted(paths_model_new, key=lambda i: int(os.path.splitext(os.path.basename(i))[0][6:]))
+
 val_loss=[]
 for i in paths_model:
   model = Unet(9, 3, 4, dropout=0.2).to(args["device"])
